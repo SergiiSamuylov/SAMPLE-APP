@@ -17,6 +17,12 @@ class StaticPagesControllerTest < ActionController::TestCase
     get :about
     assert_response :success
     assert_select "title", "About | Ruby on Rails Tutorial Sample App"
-    end
+  end
+
+  test "should get mypage" do
+    get :mypage
+    assert_response :success
+    assert_select "title", "Mypage | Ruby on Rails Tutorial Sample App"
+  end
 
 end
