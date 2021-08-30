@@ -10,5 +10,7 @@ class StaticPagesController < ApplicationController
 
   def mypage
   end
-  
+
+  def contact
+  end
 end
