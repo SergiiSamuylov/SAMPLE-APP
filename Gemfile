@@ -15,6 +15,9 @@ gem 'web-console', '2.0.0.beta3', group: :development
 group :development, :test do
   gem 'sqlite3', '1.3.9'
   gem 'byebug', '3.4.0'
+  gem 'pry-byebug'
+  gem 'pry', '~> 0.13.1'
+  gem 'spring', '1.1.3'
 
 end
 

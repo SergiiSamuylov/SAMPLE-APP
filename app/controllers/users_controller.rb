@@ -1,7 +1,12 @@
 class UsersController < ApplicationController
-  
+  def index
+  end
+
   def show
-    @user = User.find(params[:id])
+    unless @user = User.find(params[:id])
+      render(text: "<h1>User not found</h1>", status: 404)
+    end
+    # debugger
   end
 
   def new
