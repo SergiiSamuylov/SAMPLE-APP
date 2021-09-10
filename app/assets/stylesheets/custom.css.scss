@@ -6,9 +6,9 @@
 $gray-medium-light: #eaeaea;
 
 @mixin box_sizing {
-  -moz-box-sizing:    border-box;
+  -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  box-sizing:         border-box;
+  box-sizing: border-box;
 }
 
 /* universal */
@@ -34,7 +34,12 @@ textarea {
 
 /* typography */
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   line-height: 1;
 }
 
@@ -59,7 +64,7 @@ p {
   line-height: 1.7em;
 }
 
-  /* header */
+/* header */
 
 #logo {
   float: left;
@@ -71,8 +76,8 @@ p {
   padding-top: 9px;
   font-weight: bold;
   &:hover {
-  color: white;
-  text-decoration: none;
+    color: white;
+    text-decoration: none;
   }
 }
 
@@ -117,7 +122,7 @@ footer {
 aside {
   section.user_info {
     margin-top: 20px;
-}
+  }
   section {
     padding: 10px 0;
     margin-top: 20px;
@@ -149,7 +154,10 @@ aside {
 
 /* forms */
 
-input, textarea, select, .uneditable-input {
+input,
+textarea,
+select,
+.uneditable-input {
   border: 1px solid #bbb;
   width: 100%;
   margin-bottom: 15px;
@@ -173,4 +181,18 @@ input {
   .form-control {
     color: $state-danger-text;
   }
+}
+
+.checkbox {
+  margin-top: -10px;
+  margin-bottom: 10px;
+  span {
+    margin-left: 20px;
+    font-weight: normal;
+  }
+}
+
+#session_remember_me {
+  width: auto;
+  margin-left: 0;
 }

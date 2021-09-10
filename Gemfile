@@ -17,7 +17,6 @@ group :development, :test do
   gem 'byebug', '3.4.0'
   gem 'pry-byebug'
   gem 'pry', '~> 0.13.1'
-  gem 'spring', '1.1.3'
 
 end
 
